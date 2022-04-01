@@ -1,0 +1,10 @@
+import pandas as pd
+file = pd.read_excel("problem66.xlsx")
+sum = file["price"].sum()
+product = file["price"].product()
+count = file["price"].count()
+mean = file["price"].mean()
+print("Total Sum = "+str(sum))
+print("Total Product = "+str(product))
+print("Total Values = "+str(count))
+print("Total Mean = "+str(mean))
